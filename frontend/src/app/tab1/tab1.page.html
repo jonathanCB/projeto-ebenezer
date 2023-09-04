@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Feed
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,4 +14,10 @@
   </ion-header>
 
   <app-card></app-card>
+  <app-card></app-card>
+  <app-card></app-card>
+  
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
