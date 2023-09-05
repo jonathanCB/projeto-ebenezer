@@ -7,12 +7,13 @@ import { InfiniteScrollCustomEvent } from '@ionic/angular';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
+  carrega = false;
   constructor() {}
 
   onIonInfinite(ev: any) {
     setTimeout(() => {
       (ev as InfiniteScrollCustomEvent).target.complete();
+      this.carrega = true;
     }, 500);
   }
 }

@@ -13,9 +13,20 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
+  <ion-grid>
+    <ion-row>
+      <app-card></app-card>
+    </ion-row>
+    <ion-row>
+      <app-card></app-card>
+    </ion-row>
+    <ion-row>
+      <app-card></app-card>
+    </ion-row>
+    <ion-row *ngIf="carrega">
+      <app-card></app-card>
+    </ion-row>
+  </ion-grid>
   
   <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
     <ion-infinite-scroll-content></ion-infinite-scroll-content>

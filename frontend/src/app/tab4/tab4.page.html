@@ -6,12 +6,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content class="ion-padding" [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 4</ion-title>
+      <ion-title size="large">Contato</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 4 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-icon name="mail-outline"></ion-icon> &nbsp;<b>Email:</b>&nbsp;fulano@gmail.com
+    </ion-row>
+    <ion-row class="ion-margin-top">
+      <ion-icon name="logo-instagram"></ion-icon> &nbsp;<b>Instagram:</b>&nbsp;<a href="https://instagram.com/projeto.socialebenezer?igshid=MzRlODBiNWFlZA==" target="_blank">@projeto.socialebenezer</a> 
+    </ion-row>
+    <ion-row class="ion-margin-top">
+      <ion-icon name="call-outline"></ion-icon> &nbsp;<b>Telefone:</b>&nbsp;(51)99876-5432
+    </ion-row>
+  </ion-grid>
 </ion-content>
