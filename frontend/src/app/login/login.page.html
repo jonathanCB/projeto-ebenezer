@@ -21,6 +21,6 @@
     </ion-row>
   </ion-grid>
 
-  <a href="/tabs" routerActive="active">Tabs</a>
+  <ion-button [routerLink]="['/tabs', {admin: true}]" [queryParams]="{admin: true}">Login</ion-button>
 
 </ion-content>
