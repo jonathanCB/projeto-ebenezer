@@ -1,0 +1,12 @@
+.alert-wrapper.sc-ion-alert-md {
+    background: #e5e5e5;
+    color: black;
+  }
+
+.alert-title.sc-ion-alert-md {
+    color: #eb445a;
+}
+
+.alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+    color: black;
+}

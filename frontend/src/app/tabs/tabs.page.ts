@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { LoginService } from '../login-service/login.service';
 
 @Component({
   selector: 'app-tabs',
@@ -8,37 +8,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TabsPage implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute) {
- 
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    this.activatedRoute.queryParams
-    .subscribe(v => {
-      if (v) {
-        console.log(v)
-      } else {
-        console.log('nada')
-      }        
-    });
-
-    this.activatedRoute.params
-    .subscribe(v => {
-      if (v) {
-        console.log(v)
-      } else {
-        console.log('nada')
-      }        
-    });
-
-    this.activatedRoute.data
-    .subscribe(v => {
-      if (v) {
-        console.log(v)
-      } else {
-        console.log('nada')
-      }        
-    });
+    
   }
 
 }
