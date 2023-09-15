@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CardVO } from './CardVO';
+import { PostVO } from '../add-post/PostVO';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +7,7 @@ import { CardVO } from './CardVO';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent  implements OnInit {
-  @Input() cardVO!: CardVO;
+  @Input() postVO!: PostVO;
 
   constructor() { }
 

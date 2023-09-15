@@ -7,9 +7,10 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PopoverComponent } from './popover/popover.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @NgModule({
-  declarations: [AppComponent, PopoverComponent],
+  declarations: [AppComponent, PopoverComponent, AddPostComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

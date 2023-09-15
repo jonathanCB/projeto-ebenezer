@@ -4,7 +4,7 @@
       Feed
     </ion-title>
     <ion-buttons slot="primary">
-      <ion-button *ngIf="mostraBotaoAddPost" fill="solid" color="primary">
+      <ion-button *ngIf="!mostraBotaoAddPost" fill="solid" shape="round" color="warning" (click)="openAddPost()">
         Add post
         <ion-icon slot="end" name="add"></ion-icon>
       </ion-button>

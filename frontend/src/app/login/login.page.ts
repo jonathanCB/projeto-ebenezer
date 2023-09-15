@@ -26,7 +26,11 @@ export class LoginPage {
   async login() {
     if (this.usuario.value && this.usuario.value.includes('admin') && this.senha.value && this.senha.value.includes('123456')) {
       this.loginService.isAdmin = true;
-      this.router.navigate(['/tabs'])
+      setTimeout(() => {
+        this.usuario.setValue('');
+        this.senha.setValue('');
+        this.router.navigate(['/tabs']);
+      }, 500);
     } else {
       const alert = await this.alertController.create({
         header: 'Erro',
