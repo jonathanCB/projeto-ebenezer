@@ -73,7 +73,11 @@ export class Tab1Page implements OnInit {
     const { data, role } = await modal.onWillDismiss();
 
     if (role === 'confirm') {
-      console.log(data);
+      if (data) {     
+        //Inserindo o post criado no array de posts salvos;   
+        this.postsSaved.push(data);
+        this.carregaItensView();
+      };
     }
   }
 

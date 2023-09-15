@@ -36,6 +36,7 @@ export class LoginPage {
         header: 'Erro',
         message: "Usuário ou senha incorretos. Tente novamente!",
         buttons: ['OK'],
+        cssClass: 'error-alert'
       });
   
       await alert.present();
