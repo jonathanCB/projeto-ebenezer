@@ -23,18 +23,9 @@
   </ion-header>
 
   <ion-grid>
-    <ion-row>
-      <app-card></app-card>
-    </ion-row>
-    <ion-row>
-      <app-card></app-card>
-    </ion-row>
-    <ion-row>
-      <app-card></app-card>
-    </ion-row>
-    <ion-row *ngIf="carrega">
-      <app-card></app-card>
-    </ion-row>
+    <ion-row *ngFor="let post of postsView">
+      <app-card [postVO]="post"></app-card>
+    </ion-row>    
   </ion-grid>
   
   <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
