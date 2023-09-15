@@ -3,10 +3,13 @@
     <ion-title>
       Feed
     </ion-title>
-    <ion-buttons *ngIf="mostraBotaoAddPost" slot="primary">
-      <ion-button fill="solid" color="warning">
+    <ion-buttons slot="primary">
+      <ion-button *ngIf="mostraBotaoAddPost" fill="solid" color="primary">
         Add post
         <ion-icon slot="end" name="add"></ion-icon>
+      </ion-button>
+      <ion-button routerLink="/">
+        <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>

@@ -3,6 +3,11 @@
     <ion-title>
       Contribua
     </ion-title>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/">
+        <ion-icon slot="icon-only" name="exit-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -14,8 +19,17 @@
   </ion-header>
 
   <ion-grid class="ion-margin">
-    <ion-row>
-      [content]
+    <ion-row class="ion-justify-content-center">
+      <h5>Aceitamos pix de qualquer valor</h5>
+    </ion-row>
+    <ion-row class="ion-margin-top ion-justify-content-center">
+      <b>Chave pix aleatória:</b> 
+      <code>6117b2a7-8b6f-4b45-b9bb-7fdebbe31732</code> 
+      &nbsp; 
+      <ion-button shape="round" size="small" color="warning" (click)="presentPopover($event)">
+        Copiar
+        <ion-icon slot="icon-only" name="copy-outline"></ion-icon>
+      </ion-button>
     </ion-row>
   </ion-grid>
 </ion-content>

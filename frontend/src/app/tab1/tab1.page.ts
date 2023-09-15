@@ -14,6 +14,7 @@ export class Tab1Page implements OnInit {
   constructor(private loginService: LoginService) {}
 
   ngOnInit(): void {
+    console.log(this.loginService.isAdmin)
     if (this.loginService.isAdmin) {
       this._mostraBotaoAddPost = true;
     }
