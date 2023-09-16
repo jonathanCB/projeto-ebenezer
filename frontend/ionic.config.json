@@ -1,5 +1,7 @@
 {
   "name": "projeto-ebenezer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
