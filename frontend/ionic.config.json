@@ -1,7 +1,8 @@
 {
   "name": "projeto-ebenezer",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
